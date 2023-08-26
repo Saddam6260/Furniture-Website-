@@ -1,73 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 /* 
 =====
 Reset
 =====
 */
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-:root{
-    --font-sm: 400;
-    --font-md: 500;
-    --font-sb: 600;
-    --font-bold: 700;
-    --head-color: #333;
-    --learge-head: #054C73;
-    --pera-color: #666;
-    --sky-blue: #DFE9F4;
+:root {
+  --font-sm: 400;
+  --font-md: 500;
+  --font-sb: 600;
+  --font-bold: 700;
+  --head-color: #333;
+  --learge-head: #054c73;
+  --pera-color: #666;
+  --sky-blue: #dfe9f4;
 }
 /* 
 ============
 Common Style
 ============
 */
-.container{
-    width: 83.33%;
-    max-width: 1200px;
-    margin: 0 auto;
+.container {
+  width: 83.33%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.heading{
-    font-size: 2rem;
-    font-weight: var(--font-bold);
-    color: var(--head-color);
+.heading {
+  font-size: 2rem;
+  font-weight: var(--font-bold);
+  color: var(--head-color);
 }
-.common-pera{
-    font-size: 1.25rem;
-    font-weight: var(--font-sm);
-    color: var(--pera-color);
+.common-pera {
+  font-size: 1.25rem;
+  font-weight: var(--font-sm);
+  color: var(--pera-color);
 }
 
 @media only screen and (max-width: 992px) {
-    .container{
-        width: 85%;
-    }
-    .heading{
-        font-size: 1.5rem;
-    }
+  .container {
+    width: 85%;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 768px) {
-    .container{
-        width: 90%;
-    }
-    .common-pera{
-        font-size: 1rem;
-    }
+  .container {
+    width: 90%;
+  }
+  .common-pera {
+    font-size: 1rem;
+  }
 }
 @media only screen and (max-width: 375px) {
-    .container{
-        width: 90%;
-    }
+  .container {
+    width: 90%;
+  }
 }
 
 /* 
@@ -75,41 +75,47 @@ a{
 Header
 ======
 */
-header{
-    padding: 38px 0px;
+header {
+  padding: 38px 0px;
 }
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header h1{
-    font-size: 2.12rem;
-    font-weight: 700;
-    color: var(--learge-head);
+header h1 {
+  font-size: 2.12rem;
+  font-weight: 700;
+  color: var(--learge-head);
 }
-nav ul{
-    display: flex;
-    column-gap: 70px;
+nav ul {
+  display: flex;
+  column-gap: 70px;
 }
-nav ul li a{
-    font-size: 14px;
-    font-weight: var(--font-sb);
-    color: var(--head-color);
+nav ul li a {
+  font-size: 14px;
+  font-weight: var(--font-sb);
+  color: var(--head-color);
 }
 
 @media only screen and (max-width: 992px) {
-    header{
-        padding: 24px;
-    }
-    nav ul{
-        column-gap: 40px;
-    }
+  header {
+    padding: 24px;
+  }
+  nav ul {
+    column-gap: 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
-    header h1{
-        font-size: 1.7rem;
-    }
+  header h1 {
+    font-size: 1.7rem;
+  }
+  header .container {
+    flex-flow: column wrap;
+  }
+  nav ul {
+    flex-flow: column wrap;
+  }
 }
 
 /* 
@@ -117,52 +123,106 @@ nav ul li a{
 Main
 ====
 */
-main{
-    width: 100%;
-    background-image: url(./images/main-bg-img.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 155px 0px 151px 0px;;
+main {
+  width: 100%;
+  background-image: url(./images/main-bg-img.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 155px 0px 151px 0px;
 }
-main .content{
-    width: 44.5%;
-    min-width: 643px;
-    border-radius: 10px;
-    padding: 37px 58px 41px 39px;
-    background-color: var(--sky-blue);
-    margin-left: auto;
-    margin-right: -30px;
+main .content {
+  width: 44.5%;
+  min-width: 643px;
+  border-radius: 10px;
+  padding: 37px 58px 41px 39px;
+  background-color: var(--sky-blue);
+  margin-left: auto;
+  margin-right: -30px;
 }
-main .content p:first-child{
-    font-size: 1rem;
-    color: var(--learge-head);
-    font-weight: 600;
+main .content p:first-child {
+  font-size: 1rem;
+  color: var(--learge-head);
+  font-weight: 600;
 }
-.main-content-des{
-    font-size: 1.1rem;
-    color: var(--head-color);
-    font-weight: var(--font-md);
-    line-height: 39px;
-    margin-bottom: 30px;
+.main-content-des {
+  font-size: 1.1rem;
+  color: var(--head-color);
+  font-weight: var(--font-md);
+  line-height: 39px;
+  margin-bottom: 30px;
 }
-main .content h1{
+main .content h1 {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 52px;
+  line-height: 65px;
+  padding: 20px 0px;
+  font-weight: var(--font-bold);
+  color: var(--learge-head);
+}
+main button {
+  border: none;
+  border-radius: 50px;
+  padding: 25px 72px;
+  background-color: var(--learge-head);
+}
+main button a {
+  color: white;
+  font-size: 1rem;
+  font-weight: var(--font-bold);
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding: 100px 0px;
+  }
+  main .container {
     display: flex;
-    flex-flow: column wrap;
-    font-size: 52px;
-    line-height: 65px;
-    padding: 20px 0px;
-    font-weight: var(--font-bold);
-    color: var(--learge-head);
-}
-main button{
-    border: none;
-    border-radius: 50px;
-    padding: 25px 72px;
-    background-color: var(--learge-head);
-}
-main button a{
-    color: white;
+    justify-content: center;
+  }
+  main .content {
+    margin-left: initial;
+    margin-right: initial;
+    min-width: 550px;
+  }
+  main .content h1 {
+    font-size: 44px;
+    line-height: 50px;
+    padding: 15px 0px;
+  }
+  .main-content-des {
     font-size: 1rem;
-    font-weight: var(--font-bold);
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  main button {
+    border-radius: 30px;
+    padding: 20px 52px;
+  }
 }
+@media only screen and (max-width: 768px) {
+  main .content {
+    width: 100%;
+    min-width: 350px;
+    max-width: 450px;
+  }
+  main .content h1 {
+    font-size: 32px;
+    line-height: 40px;
+    flex-flow: row wrap;
+  }
+  main button {
+    border-radius: 30px;
+    padding: 20px 42px;
+  }
+}
+@media only screen and (max-width: 576px) {
+    main .content h1{
+        font-size: 28px;
+    }
+}
+/* 
+=====
+
+*/
