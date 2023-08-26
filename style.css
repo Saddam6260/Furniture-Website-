@@ -42,6 +42,9 @@ a {
   font-weight: var(--font-bold);
   color: var(--head-color);
 }
+img{
+    width: 100%;
+}
 .common-pera {
   font-size: 1.25rem;
   font-weight: var(--font-sm);
@@ -206,6 +209,7 @@ main button a {
     width: 100%;
     min-width: 350px;
     max-width: 450px;
+    padding: 30px 35px 30px 33px;
   }
   main .content h1 {
     font-size: 32px;
@@ -223,6 +227,49 @@ main button a {
     }
 }
 /* 
-=====
-
+========
+Fesality
+========
 */
+#fesality{
+    padding: 46px 0px 50px 0px;
+    background-color: var(--sky-blue);
+}
+#fesality .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.fesality-item{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+}
+.fesality-item:nth-child(1) .img-wrap{
+    width: 83px;
+}
+.fesality-item:nth-child(2) .img-wrap{
+    width: 59px;
+}
+.fesality-item:nth-child(3) .img-wrap{
+    width: 55px;
+}
+.fesality-item div:nth-child(2) h5{
+    font-size: 24px;
+    font-weight: var(--font-sb);
+    color: var(--head-color);
+}
+.fesality-item div:nth-child(2) p{
+    font-size: 16px;
+    font-weight: var(--font-sm);
+    color: var(--head-color);
+}
+
+@media only screen and (max-width: 1200px) {
+    #fesality .container{
+        justify-content: center;
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+}
+
