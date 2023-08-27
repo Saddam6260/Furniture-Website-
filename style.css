@@ -448,6 +448,20 @@ Beautify your space
 #beautify-your-space .img-wrap{
   width: 41.5%;
   max-width: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+#beautify-your-space .img-wrap::after{
+  content: '';
+  width: 373px;
+  height: 373px;
+  border-radius: 373px;
+  background-color: #09513B;
+  position: absolute;
+  right: -70px;
+  z-index: -1;
 }
 #beautify-your-space .img-wrap img{
   border-radius: 50px 10px 50px 10px;
@@ -467,19 +481,22 @@ Beautify your space
     padding: 20px 45px;
     border-radius: 40px;
   }
+  #beautify-your-space .img-wrap::after{
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    right: -50px;
+  }
 }
 @media only screen and (max-width: 768px) {
   #beautify-your-space .container{
     column-gap: 30px;
-    /* flex-flow: column; */
   }
   #beautify-your-space .img-wrap{
     width: 48%;
-    order: 1;
   }
   #beautify-your-space .content{
     width: 50%;
-    order: 2;
     margin-left: 0px;
   }
   #beautify-your-space .content button{
@@ -487,6 +504,12 @@ Beautify your space
     border-radius: 30px;
     margin-top: 20px;
     font-size: 14px;
+  }
+  #beautify-your-space .img-wrap::after{
+    width: 280px;
+    height: 280px;
+    border-radius: 280px;
+    right: -40px;
   }
 }
 
@@ -501,6 +524,12 @@ Beautify your space
   }
   #beautify-your-space .content{
     width: 80%;
+  }
+  #beautify-your-space .img-wrap::after{
+    width: 250px;
+    height: 250px;
+    border-radius: 250px;
+    right: -50px;
   }
 }
 
