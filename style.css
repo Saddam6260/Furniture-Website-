@@ -538,6 +538,9 @@ Beautify your space
 Browse the range
 ================
 */
+#browse-the-range{
+  border-bottom: 1px solid #D7D6D6;
+}
 .browse-the-range-imgset {
   display: flex;
   column-gap: 20px;
@@ -559,6 +562,60 @@ Browse the range
   }
   .browse-the-range-imgset .img-wrap {
     max-width: 350px;
+  }
+}
+
+/* 
+===========
+How it work
+===========
+*/
+#how-it-work{
+  padding: 50px 0px 197px 0px;
+}
+.card-body h2{
+  margin-bottom: 10px;
+}
+.card-wrap{
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  column-gap: 20px;
+}
+.how-it-work-card{
+  display: flex;
+  flex-flow: column;
+  row-gap: 40px;
+}
+.card-img{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.card-img img{
+  z-index: 1;
+  position: relative;
+}
+.serial{
+  position: absolute;
+  font-size: 20px;
+  font-weight: var(--font-bold);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--head-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white;
+  margin-bottom: -30px;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+  .card-wrap{
+    margin-top: 30px;
   }
 }
 
@@ -588,7 +645,7 @@ form{
 }
 form input[type="email"] {
   width: 67%;
-  padding: 25px 0px 25px 25px;
+  padding: 24px 0px 25px 25px;
   border: 1px solid var(--head-color);
   border-right: none;
   border-radius: 3px 0px 0px 3px;
@@ -600,7 +657,7 @@ form input[type="submit"] {
   color: white;
   background-color: var(--learge-head);
   padding: 23px;
-  margin-left: -3px;
+  margin-left: -4px;
   border-radius: 0px 3px 3px 0px;
 }
 
