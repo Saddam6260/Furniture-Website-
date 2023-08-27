@@ -63,6 +63,7 @@ img {
   font-size: 1.25rem;
   font-weight: var(--font-sm);
   color: var(--pera-color);
+  line-height: 39px;
 }
 .md-description{
   font-size: 18px;
@@ -82,16 +83,20 @@ img {
   .heading {
     font-size: 1.5rem;
   }
+  .description{
+    line-height: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
-  .common-pera {
-    font-size: 1rem;
-  }
   .heading{
     margin-bottom: 15px;
   }
   .heading-two, .heading-three {
     font-size: 20px;
+  }
+  .description {
+    font-size: 1rem;
+    line-height: none;
   }
   .sm-description{
     font-size: 14px;
@@ -404,6 +409,28 @@ Inspiration
   }
 }
 
+/* 
+=======
+Sign up
+======= 
+*/
+#sign-up{
+  padding: 60px 0px;
+  background-color: var(--sky-blue);
+}
+#sign-up .container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.join{
+  width: 44.4%;
+  min-width: 350px;
+  max-width: 514px;
+}
+.join h2{
+  margin-bottom: 10px;
+}
 /*
 ======
 Footer
@@ -460,7 +487,6 @@ footer .container{
     max-width: 175px;
   }
 }
-
 @media only screen and (max-width: 992px) {
   .footer-imgset{
     width: 100%;
