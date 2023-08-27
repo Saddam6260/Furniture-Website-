@@ -50,10 +50,28 @@ img {
   color: var(--head-color);
   margin-bottom: 20px;
 }
+.heading-two, .heading-three {
+  font-size: 24px;
+  font-weight: var(--font-sb);
+  color: var(--head-color);
+}
+.heading-three{
+  font-weight: var(--font-bold);
+}
 .description {
   font-size: 1.25rem;
   font-weight: var(--font-sm);
   color: var(--pera-color);
+}
+.md-description{
+  font-size: 18px;
+  font-weight: var(--font-sm);
+  line-height: 25px;
+}
+.sm-description{
+  font-size: 16px;
+  font-weight: var(--font-sm);
+  color: var(--head-color);
 }
 
 @media only screen and (max-width: 992px) {
@@ -71,6 +89,15 @@ img {
   .heading{
     margin-bottom: 15px;
   }
+  .heading-two, .heading-three {
+    font-size: 20px;
+  }
+  .sm-description{
+    font-size: 14px;
+  }
+  .md-description{
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 375px) {
   .container {
@@ -78,6 +105,9 @@ img {
   }
   .heading{
     margin-bottom: 10px;
+  }
+  .heading-two, .heading-three {
+    font-size: 18px;
   }
 }
 
@@ -285,10 +315,13 @@ Fesality
   #fesality{
     padding: 36px 0px 40px 0px;
   }
+  .fesality-item div:nth-child(2) h5 {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .fesality-item div:nth-child(2) h5 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .fesality-item:nth-child(1) .img-wrap {
     width: 70px;
