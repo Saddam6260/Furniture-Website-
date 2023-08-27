@@ -355,7 +355,7 @@ Inspiration
   margin-top: 100px;
 }
 #inspiration-collection .imgset .img-wrap{
-  width: 30%;
+  /* width: 30%; */
   max-width: 355px;
 }
 #inspiration-collection .imgset .img-wrap:nth-child(1) img{
@@ -395,20 +395,59 @@ Inspiration
     border-radius: 0px 0px 50px 0px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 576px) {
   #inspiration-collection .imgset{
     flex-flow: column ;
     align-items: center;
     row-gap: 20px;
   }
   #inspiration-collection .imgset .img-wrap{
-    width: 80%;
+    max-width: 350px;
   }
   #inspiration-collection .imgset .img-wrap:nth-child(2){
     margin-top: 0px;
   }
 }
 
+/* 
+================
+Browse the range
+================
+*/
+#browse-the-range{
+  padding: 60px 0px;
+}
+.browse-the-range-imgset{
+  display: flex;
+  column-gap: 20px;
+  margin-top: 50px;
+}
+.browse-the-range-imgset .img-wrap{
+  max-width: 381px;
+  display: flex;
+  flex-flow: column;
+  row-gap: 30px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  #browse-the-range{
+    padding: 40px 0px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #browse-the-range{
+    padding: 30px 0px;
+  }
+  .browse-the-range-imgset{
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  .browse-the-range-imgset .img-wrap{
+    max-width: 350px;
+  }
+}
 /* 
 =======
 Sign up
