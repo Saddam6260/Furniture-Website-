@@ -333,16 +333,6 @@ Fesality
 .fesality-item:nth-child(3) .img-wrap {
   width: 55px;
 }
-.fesality-item div:nth-child(2) h5 {
-  font-size: 24px;
-  font-weight: var(--font-sb);
-  color: var(--head-color);
-}
-.fesality-item div:nth-child(2) p {
-  font-size: 16px;
-  font-weight: var(--font-sm);
-  color: var(--head-color);
-}
 
 @media only screen and (max-width: 1200px) {
   #fesality .container {
@@ -356,14 +346,8 @@ Fesality
   #fesality {
     padding: 36px 0px 40px 0px;
   }
-  .fesality-item div:nth-child(2) h5 {
-    font-size: 20px;
-  }
 }
 @media only screen and (max-width: 576px) {
-  .fesality-item div:nth-child(2) h5 {
-    font-size: 18px;
-  }
   .fesality-item:nth-child(1) .img-wrap {
     width: 70px;
   }
