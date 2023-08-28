@@ -47,6 +47,20 @@ a {
 img {
   width: 100%;
 }
+button{
+  border: none;
+  background-color: var(--learge-head);
+}
+button a{
+  font-size: 1rem;
+  color: white;
+  font-weight: var(--font-bold);
+}
+@media only screen and (max-width: 768px) {
+  button a{
+    font-size: .87rem;
+  }
+}
 
 /* 
 ============
@@ -207,7 +221,7 @@ main {
   background-size: cover;
   padding: 155px 0px 151px 0px;
 }
-main .content {
+main .main-content {
   width: 44.5%;
   min-width: 643px;
   border-radius: 10px;
@@ -216,37 +230,28 @@ main .content {
   margin-left: auto;
   margin-right: -30px;
 }
-main .content p:first-child {
-  font-size: 1rem;
+main .main-content p:first-child {
   color: var(--learge-head);
-  font-weight: 600;
+  font-weight: var(--font-sb);
 }
 .main-content-des {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   color: var(--head-color);
   font-weight: var(--font-md);
   line-height: 39px;
   margin-bottom: 30px;
 }
-main .content h1 {
+main .main-content h1 {
   display: flex;
   flex-flow: column wrap;
   font-size: 52px;
   line-height: 65px;
   padding: 20px 0px;
-  font-weight: var(--font-bold);
   color: var(--learge-head);
 }
 main button {
-  border: none;
   border-radius: 50px;
   padding: 25px 72px;
-  background-color: var(--learge-head);
-}
-main button a {
-  color: white;
-  font-size: 1rem;
-  font-weight: var(--font-bold);
 }
 
 @media only screen and (max-width: 992px) {
@@ -257,12 +262,12 @@ main button a {
     display: flex;
     justify-content: center;
   }
-  main .content {
+  main .main-content {
     margin-left: initial;
     margin-right: initial;
     min-width: 550px;
   }
-  main .content h1 {
+  main .main-content h1 {
     font-size: 44px;
     line-height: 50px;
     padding: 15px 0px;
@@ -278,13 +283,13 @@ main button a {
   }
 }
 @media only screen and (max-width: 768px) {
-  main .content {
+  main .main-content {
     width: 100%;
     min-width: 350px;
     max-width: 450px;
     padding: 30px 35px 30px 33px;
   }
-  main .content h1 {
+  main .main-content h1 {
     font-size: 32px;
     line-height: 40px;
     flex-flow: row wrap;
@@ -295,10 +300,11 @@ main button a {
   }
 }
 @media only screen and (max-width: 576px) {
-  main .content h1 {
+  main .main-content h1 {
     font-size: 28px;
   }
 }
+
 /* 
 ========
 Fesality
