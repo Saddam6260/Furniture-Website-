@@ -424,18 +424,18 @@ Beautify your space
 #beautify-your-space {
   background-color: var(--sky-blue);
 }
-#beautify-your-space .container{
+#beautify-your-space .container {
   display: flex;
   flex-flow: row;
   column-gap: 62px;
   align-items: center;
 }
-#beautify-your-space .content{
+#beautify-your-space .content {
   width: 42.8%;
   max-width: 514px;
   margin-left: 40px;
 }
-#beautify-your-space .content button{
+#beautify-your-space .content button {
   padding: 24px 57px;
   border-radius: 50px;
   border: none;
@@ -445,7 +445,7 @@ Beautify your space
   font-weight: var(--font-bold);
   margin-top: 30px;
 }
-#beautify-your-space .img-wrap{
+#beautify-your-space .img-wrap {
   width: 41.5%;
   max-width: 500px;
   position: relative;
@@ -453,35 +453,35 @@ Beautify your space
   align-items: center;
   z-index: 1;
 }
-#beautify-your-space .img-wrap::after{
-  content: '';
+#beautify-your-space .img-wrap::after {
+  content: "";
   width: 373px;
   height: 373px;
   border-radius: 373px;
-  background-color: #09513B;
+  background-color: #09513b;
   position: absolute;
   right: -70px;
   z-index: -1;
 }
-#beautify-your-space .img-wrap img{
+#beautify-your-space .img-wrap img {
   border-radius: 50px 10px 50px 10px;
 }
 
 @media only screen and (max-width: 992px) {
-  #beautify-your-space .container{
+  #beautify-your-space .container {
     column-gap: 30px;
   }
-  #beautify-your-space .img-wrap{
+  #beautify-your-space .img-wrap {
     width: 43%;
   }
-  #beautify-your-space .content{
+  #beautify-your-space .content {
     width: 45%;
   }
-  #beautify-your-space .content button{
+  #beautify-your-space .content button {
     padding: 20px 45px;
     border-radius: 40px;
   }
-  #beautify-your-space .img-wrap::after{
+  #beautify-your-space .img-wrap::after {
     width: 300px;
     height: 300px;
     border-radius: 300px;
@@ -489,23 +489,23 @@ Beautify your space
   }
 }
 @media only screen and (max-width: 768px) {
-  #beautify-your-space .container{
+  #beautify-your-space .container {
     column-gap: 30px;
   }
-  #beautify-your-space .img-wrap{
+  #beautify-your-space .img-wrap {
     width: 48%;
   }
-  #beautify-your-space .content{
+  #beautify-your-space .content {
     width: 50%;
     margin-left: 0px;
   }
-  #beautify-your-space .content button{
+  #beautify-your-space .content button {
     padding: 18px 40px;
     border-radius: 30px;
     margin-top: 20px;
     font-size: 14px;
   }
-  #beautify-your-space .img-wrap::after{
+  #beautify-your-space .img-wrap::after {
     width: 280px;
     height: 280px;
     border-radius: 280px;
@@ -514,18 +514,18 @@ Beautify your space
 }
 
 @media only screen and (max-width: 576px) {
-  #beautify-your-space .container{
+  #beautify-your-space .container {
     column-gap: 0px;
     flex-flow: column;
     row-gap: 30px;
   }
-  #beautify-your-space .img-wrap{
+  #beautify-your-space .img-wrap {
     width: 70%;
   }
-  #beautify-your-space .content{
+  #beautify-your-space .content {
     width: 80%;
   }
-  #beautify-your-space .img-wrap::after{
+  #beautify-your-space .img-wrap::after {
     width: 250px;
     height: 250px;
     border-radius: 250px;
@@ -538,8 +538,8 @@ Beautify your space
 Browse the range
 ================
 */
-#browse-the-range{
-  border-bottom: 1px solid #D7D6D6;
+#browse-the-range {
+  border-bottom: 1px solid #d7d6d6;
 }
 .browse-the-range-imgset {
   display: flex;
@@ -570,33 +570,34 @@ Browse the range
 How it work
 ===========
 */
-#how-it-work{
+#how-it-work {
   padding: 50px 0px 197px 0px;
 }
-.card-body h2{
+.card-body h2 {
   margin-bottom: 10px;
 }
-.card-wrap{
+.card-wrap {
   margin-top: 50px;
   display: flex;
   text-align: center;
   column-gap: 20px;
 }
-.how-it-work-card{
+.how-it-work-card {
   display: flex;
   flex-flow: column;
   row-gap: 40px;
+  max-width: 381px;
 }
-.card-img{
+.card-img {
   display: flex;
   justify-content: center;
   align-items: end;
 }
-.card-img img{
+.card-img img {
   z-index: 1;
   position: relative;
 }
-.serial{
+.serial {
   position: absolute;
   font-size: 20px;
   font-weight: var(--font-bold);
@@ -614,8 +615,17 @@ How it work
 }
 
 @media only screen and (max-width: 768px) {
-  .card-wrap{
+  .card-wrap {
     margin-top: 30px;
+  }
+  .card-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 40px;
+  }
+  .how-it-work-card {
+    width: 40%;
+    min-width: 280px;
   }
 }
 
@@ -640,7 +650,7 @@ Sign up
   margin-bottom: 10px;
 }
 /* form */
-form{
+form {
   margin-top: 50px;
 }
 form input[type="email"] {
@@ -662,7 +672,7 @@ form input[type="submit"] {
 }
 
 @media only screen and (max-width: 768px) {
-  form{
+  form {
     margin-top: 30px;
   }
   form input[type="email"] {
