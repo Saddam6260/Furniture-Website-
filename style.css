@@ -187,7 +187,13 @@ nav ul li a {
   font-weight: var(--font-sb);
   color: var(--head-color);
 }
-
+.menu-button{
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: var(--learge-head);
+}
 @media only screen and (max-width: 992px) {
   header {
     padding: 24px;
@@ -197,14 +203,14 @@ nav ul li a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .topber-logo-wrap {
+  .topber-logo-wrap h1{
     font-size: 1.7rem;
   }
-  header .container {
-    flex-flow: column wrap;
+  header nav{
+    display: none;
   }
-  nav ul {
-    flex-flow: column wrap;
+  .menu-button{
+    display: block;
   }
 }
 
