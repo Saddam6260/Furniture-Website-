@@ -47,18 +47,18 @@ a {
 img {
   width: 100%;
 }
-button{
+button {
   border: none;
   background-color: var(--learge-head);
 }
-button a{
+button a {
   font-size: 1rem;
   color: white;
   font-weight: var(--font-bold);
 }
 @media only screen and (max-width: 768px) {
-  button a{
-    font-size: .87rem;
+  button a {
+    font-size: 0.87rem;
   }
 }
 
@@ -108,7 +108,7 @@ Common class
 .padding-60 {
   padding: 60px 0px;
 }
-.flex{
+.flex {
   display: flex;
 }
 
@@ -187,7 +187,7 @@ nav ul li a {
   font-weight: var(--font-sb);
   color: var(--head-color);
 }
-.menu-button{
+.menu-button {
   display: none;
   font-size: 24px;
   background: none;
@@ -203,13 +203,13 @@ nav ul li a {
   }
 }
 @media only screen and (max-width: 768px) {
-  .topber-logo-wrap h1{
+  .topber-logo-wrap h1 {
     font-size: 1.7rem;
   }
-  header nav{
+  header nav {
     display: none;
   }
-  .menu-button{
+  .menu-button {
     display: block;
   }
 }
@@ -306,7 +306,7 @@ main button {
   }
 }
 @media only screen and (max-width: 576px) {
-  main .main-content{
+  main .main-content {
     width: 100%;
     min-width: 310px;
   }
@@ -424,7 +424,7 @@ Inspiration
     row-gap: 20px;
   }
   #inspiration-collection .imgset .img-wrap {
-    max-width: 350px;
+    width: 85%;
   }
   #inspiration-collection .imgset .img-wrap:nth-child(2) {
     margin-top: 0px;
