@@ -516,9 +516,9 @@ Beautify your space
     font-size: 14px;
   }
   #beautify-your-space .img-wrap::after {
-    width: 280px;
-    height: 280px;
-    border-radius: 280px;
+    width: 260px;
+    height: 260px;
+    border-radius: 260px;
     right: -40px;
   }
 }
@@ -529,9 +529,11 @@ Beautify your space
     row-gap: 30px;
   }
   #beautify-your-space .img-wrap {
-    width: 70%;
+    order: 1;
+    width: 80%;
   }
   #beautify-your-space .beautify-content {
+    order: 2;
     width: 80%;
   }
   #beautify-your-space .img-wrap::after {
@@ -562,7 +564,6 @@ Browse the range
   row-gap: 30px;
   align-items: center;
 }
-
 @media only screen and (max-width: 576px) {
   .browse-the-range-imgset {
     flex-flow: row wrap;
@@ -624,6 +625,9 @@ How it work
 }
 
 @media only screen and (max-width: 768px) {
+  #how-it-work{
+    padding: 50px 0px 100px 0px;
+  }
   .card-wrap {
     margin-top: 30px;
   }
@@ -633,8 +637,22 @@ How it work
     row-gap: 40px;
   }
   .how-it-work-card {
-    width: 40%;
-    min-width: 280px;
+    width: 31%;
+    min-width: 175px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #how-it-work{
+    padding: 50px 0px 80px 0px;
+  }
+  .how-it-work-card {
+    width: 46%;
+    min-width: 175px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .how-it-work-card {
+    width: 80%;
   }
 }
 
@@ -689,6 +707,12 @@ form input[type="submit"] {
   }
   form input[type="submit"] {
     padding: 18px 23px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .join{
+    width: 80%;
+    min-width: 310px;
   }
 }
 
