@@ -152,7 +152,7 @@ Common class
 }
 @media only screen and (max-width: 375px) {
   .container {
-    width: 90%;
+    width: 85%;
   }
   .heading-one {
     margin-bottom: 10px;
@@ -196,7 +196,7 @@ nav ul li a {
 }
 @media only screen and (max-width: 992px) {
   header {
-    padding: 24px;
+    padding: 24px 0px;
   }
   nav ul {
     column-gap: 40px;
@@ -290,7 +290,7 @@ main button {
 }
 @media only screen and (max-width: 768px) {
   main .main-content {
-    width: 100%;
+    width: 90%;
     min-width: 350px;
     max-width: 450px;
     padding: 30px 35px 30px 33px;
@@ -306,6 +306,10 @@ main button {
   }
 }
 @media only screen and (max-width: 576px) {
+  main .main-content{
+    width: 100%;
+    min-width: 310px;
+  }
   main .main-content h1 {
     font-size: 28px;
   }
