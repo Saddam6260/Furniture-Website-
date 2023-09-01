@@ -376,11 +376,12 @@ Inspiration
 */
 #inspiration-collection .imgset {
   display: flex;
-  column-gap: 40px;
   justify-content: center;
   margin-top: 100px;
+  column-gap: 40px;
 }
 #inspiration-collection .imgset .img-wrap {
+  width: 32%;
   max-width: 355px;
 }
 #inspiration-collection .imgset .img-wrap:nth-child(1) img {
@@ -554,11 +555,12 @@ Browse the range
 }
 .browse-the-range-imgset {
   display: flex;
-  column-gap: 20px;
+  flex-flow: row wrap;
+  justify-content: space-between;
   margin-top: 50px;
 }
 .browse-the-range-imgset .img-wrap {
-  max-width: 381px;
+  width: 32%;
   display: flex;
   flex-flow: column;
   row-gap: 30px;
@@ -567,11 +569,20 @@ Browse the range
 @media only screen and (max-width: 576px) {
   .browse-the-range-imgset {
     flex-flow: row wrap;
-    justify-content: center;
-    row-gap: 20px;
+    row-gap: 30px;
   }
   .browse-the-range-imgset .img-wrap {
-    max-width: 350px;
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .browse-the-range-imgset {
+    flex-flow: column wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+  .browse-the-range-imgset .img-wrap {
+    width: 90%;
   }
 }
 
@@ -589,14 +600,15 @@ How it work
 .card-wrap {
   margin-top: 50px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
   text-align: center;
-  column-gap: 20px;
 }
 .how-it-work-card {
   display: flex;
   flex-flow: column;
   row-gap: 40px;
-  max-width: 381px;
+  width: 32%;
 }
 .card-img {
   display: flex;
@@ -631,24 +643,16 @@ How it work
   .card-wrap {
     margin-top: 30px;
   }
-  .card-wrap {
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-  .how-it-work-card {
-    width: 30%;
-    min-width: 150px;
-  }
 }
 @media only screen and (max-width: 576px) {
   #how-it-work{
     padding: 50px 0px 80px 0px;
   }
   .card-wrap{
-    column-gap: 15px;
+    row-gap: 30px;
   }
   .how-it-work-card {
-    width: 46%;
+    width: 48%;
   }
 }
 @media only screen and (max-width: 375px) {
