@@ -634,25 +634,30 @@ How it work
   .card-wrap {
     flex-flow: row wrap;
     justify-content: center;
-    row-gap: 40px;
   }
   .how-it-work-card {
-    width: 31%;
-    min-width: 175px;
+    width: 30%;
+    min-width: 150px;
   }
 }
 @media only screen and (max-width: 576px) {
   #how-it-work{
     padding: 50px 0px 80px 0px;
   }
+  .card-wrap{
+    column-gap: 15px;
+  }
   .how-it-work-card {
     width: 46%;
-    min-width: 175px;
   }
 }
 @media only screen and (max-width: 375px) {
+  .card-wrap{
+    column-gap: 0px;
+    row-gap: 20px;
+  }
   .how-it-work-card {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -703,10 +708,12 @@ form input[type="submit"] {
     margin-top: 30px;
   }
   form input[type="email"] {
+    width: 65%;
     padding: 20px 0px 20px 20px;
   }
   form input[type="submit"] {
     padding: 18px 23px;
+    width: 28%;
   }
 }
 @media only screen and (max-width: 576px) {
