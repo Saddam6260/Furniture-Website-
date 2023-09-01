@@ -420,15 +420,24 @@ Inspiration
 }
 @media only screen and (max-width: 576px) {
   #inspiration-collection .imgset {
-    flex-flow: column;
-    align-items: center;
-    row-gap: 20px;
+    justify-content: start;
+    flex-flow: row wrap;
+    row-gap: 30px;
   }
   #inspiration-collection .imgset .img-wrap {
-    width: 85%;
+    width: 47%;
   }
   #inspiration-collection .imgset .img-wrap:nth-child(2) {
     margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #inspiration-collection .imgset {
+    justify-content: center;
+  }
+  #inspiration-collection .imgset .img-wrap {
+    width: 90%;
   }
 }
 
@@ -577,7 +586,6 @@ Browse the range
 }
 @media only screen and (max-width: 375px) {
   .browse-the-range-imgset {
-    flex-flow: column wrap;
     justify-content: center;
     row-gap: 30px;
   }
@@ -657,6 +665,7 @@ How it work
 }
 @media only screen and (max-width: 375px) {
   .card-wrap{
+    justify-content: center;
     column-gap: 0px;
     row-gap: 20px;
   }
